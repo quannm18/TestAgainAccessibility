@@ -130,7 +130,6 @@ class ListActivity : AppCompatActivity() , ICheckedListener{
     private fun cleanApp() {
         val mList = mAdapter.checkList
         try {
-            Log.e("ok", mList.size.toString())
             if (i<mList.size){
                 startApplicationDetailsActivity(mList.elementAt(i))
                 i++
